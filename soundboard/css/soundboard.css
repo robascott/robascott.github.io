@@ -1,0 +1,108 @@
+body {
+	font-family: sans-serif;
+	background-color: black;
+}
+
+#logo {
+	width: 180px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 375px;
+	height: 400px;
+}
+
+.sound {
+	width: 80px;
+	height: 80px;
+	margin-top: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	color: rgba(73, 251, 53, 0.8);
+	font-size: 15px;
+	text-align: center;
+	vertical-align: text-top;
+	text-decoration: none;
+	border: solid 1px white;
+	border-radius: 10px;
+	background-color: Transparent;
+	-webkit-box-shadow: 0 0 5px 2px #ffffff;
+	-moz-box-shadow: 0 0 5px 2px #ffffff;
+	box-shadow: 0 0 5px 2px #ffffff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+.sound:active {
+	color: #ecf0f1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(#27ae60));
+}
+
+.sound:hover {
+	background-color: rgba(89, 89, 89, 0.7)!important;
+}
+
+.sound:focus {outline:0;}
+
+#tempo {
+	height:50px;
+	width: 100px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#tempobox {
+	height: 30px;
+	width: 85px;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+#tempotext {
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#tempo button {
+	color: white;
+	background-color: Transparent;
+	border: none;
+	font-size: 25px;
+}
+
+#tempo button:hover {
+	color: #a6a6a6;
+}
+
+#tempo button:active {
+	color: #404040;
+}
+
+#tempo button:focus {outline:0;}
+
+#level {
+	color: #c0392b;
+	display: inline;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#controls {
+	float: right;
+	width: 30px;
+	margin-top: 13px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+
+.clear {
+	clear: both;
+}
