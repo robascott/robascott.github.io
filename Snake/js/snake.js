@@ -553,7 +553,7 @@ $(document).ready(function() {
 		};
 		 
 		var types = ["speed","invincible","shrink"];
-		var weight = [0.45, 0.45, 0.1];  // [0.45, 0.45, 0.1];
+		var weight = [0.33, 0.33, 0.33];
 		var weighedList = this.generateWeighedList(types, weight);
 
 		this.generatePowerup = function() {
