@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/waituntilexists.js"></script>
+	<script type="text/javascript" src="js/snake.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/snake.css">
+	<title>Snake</title>
+</head>
+<body>
+
+	<div id="boardcontainer">
+
+		<div id="topbar">
+
+			<div id="p1scorebox">
+				<p id="p1scoretext">Player 1</p>
+				<p id="p1scoreno">0</p>
+			</div>
+
+			<div id="p2scorebox">
+				<p id="p2scoretext">Player 2</p>
+				<p id="p2scoreno">0</p>
+			</div>
+
+			<div id="time">2:00</div>
+		</div>
+
+		<div id="screen">
+			<div id="overlay"></div>
+			
+			<div id="startscreen">
+				<p id="title">Xtreme Snake</p>
+				<input id="startbutton1" class="button" type="button" value="START &#10; 1P">
+				<input id="startbutton2" class="button" type="button" value="START &#10; 2P">
+				<input id="howtobutton" type="button" class="button" value="HOW TO PLAY">
+			</div>
+			
+			<div id="endscreen">
+				<p id="gameover">Game Over<p>
+				<p id="winner">wins</p>
+				<input id="restartbutton" class="button" type="button" value="RESTART">
+				<input id="menubutton" class="button" type="button" value="MENU">
+			</div>
+
+			<div id="howto">
+
+				<p id="controlstitle">Controls</p>
+
+				<p>Player 1: <span style="color: #00FFFF">WASD</span> keys<p>
+				<p>Player 2: <span style="color: #f1c40f">IJKL</span> keys</p>
+				<img id="apple" src="img/apple_orig.png"><p id="appleinfo">Pick up apples to increase your score</p>
+
+				<p id="poweruptitle">Power-ups</p>
+
+				<div id="powerupcontainer">
+
+					<div id="powerupimages">
+						<img id="lightning" src="img/speed.svg">
+						<img id="shield" src="img/shield.svg">
+						<img id="scissors" src="img/scissors.svg">
+					</div>
+
+					<div id="powerupinfo">
+						<p>Temporary speed boost</p>
+						<p>Temporary invincibility</p>
+						<p>Reduces snake's length by half</p>
+					</div>
+
+				</div>
+
+				<div id="clear"></div>
+
+				<input id="backbutton" class="button" type="button" value="MENU">
+			</div>
+
+			<!-- Board gets inserted here -->
+
+		</div>
+
+		<div id="clear"></div>
+
+	</div>
+
+</body>
+</html>
