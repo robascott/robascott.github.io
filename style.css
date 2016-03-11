@@ -42,7 +42,7 @@ a:hover {
 
 
 
-h1#name {
+h1#name, #portfolio-title, #about {
 	margin-top: 50px;
 	font-size: 55px;
 	font-family: 'Raleway', sans-serif;
@@ -66,5 +66,30 @@ p#intro {
 #links a {
 	display: block;
 	font-size: 12px;
+}
+
+
+img {
+	width: 200px;
+}
+
+
+.project {
+	background-color: white;
+	margin-bottom: 50px;
+	padding: 10px;
+	height: 160px;
+}
+
+.project-info {
+	margin-left: 20px;
+	height: 135px;
+	width: 500px;
+	display: inline-block;
+	/*border: 1px solid black;*/
+}
+
+.project-title {
+	margin-top: 0;
 }
 
