@@ -89,6 +89,10 @@ img {
 	/*border: 1px solid black;*/
 }
 
+.project-img {
+	float: left;
+}
+
 .project-title {
 	margin-top: 0;
 }
