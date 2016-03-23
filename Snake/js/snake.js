@@ -18,13 +18,12 @@ $(document).ready(function() {
 	container.appendChild(table);
 
 	var board = document.getElementById("board");
-	var screenBox = document.getElementById("screen");
 
 	var width = board.offsetWidth;
 	var height = board.offsetHeight;
 	
-	$("#boardcontainer").css("max-width",width + 80);
-	$("#screen").css("max-width",width+60);
+	$("#boardcontainer").css("width",width+80);
+	$("#screen").css("width",width+60);
 	$("#screen").css("height",height+60);
 	$("#topbar").css("width",width+60);
 
