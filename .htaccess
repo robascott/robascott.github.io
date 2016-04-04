@@ -1,3 +1,10 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# To externally redirect /dir/foo.shtml to /dir/foo
+RewriteCond %{THE_REQUEST} ^GET\s.+\.shtml [NC]
+RewriteRule ^(.+)\.shtml$ /$1 [R=301,L,NC]
+
+# To internally redirect /dir/foo to /dir/foo.shtml
+RewriteCond %{REQUEST_URI} !\.shtml$ [NC]
+RewriteCond %{REQUEST_FILENAME}.shtml -f
+RewriteRule . %{REQUEST_URI}.shtml [L]
