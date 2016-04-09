@@ -1,3 +1,7 @@
+html {
+	overflow-y: scroll;
+}
+
 body {
 	background-color: #ecf0f1;
 	font-family: sans-serif;
@@ -30,14 +34,27 @@ a:hover {
 	float: right;
 }
 
-#nav a {
+.nav-link {
 	font-size: 20px;
-	padding: 10px;
+	margin: 0 7px 0 7px;
+	padding: 0 0 26px;
+
 	text-decoration: none;
+	display: inline-block;
+	border-bottom: 0px solid transparent;  
+	
+	height: 25px;
+}
+
+.nav-link:hover {
+	text-decoration: none;
+	transition: 0.1s ease;
+    border-bottom: 3px solid #403F42;
 }
 
 .active {
-	text-decoration: underline !important;
+	border: 3px solid #403F42 !important;
+	border-style: none none solid none !important;
 }
 
 
