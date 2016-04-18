@@ -13,11 +13,11 @@ main {
 }
 
 a:link {
-	color: #2c3e50;
+	color: #126590;
 }
 
 a:visited {
-	color: #2c3e50;
+	color: #126590;
 }
 
 a:hover {
@@ -26,6 +26,14 @@ a:hover {
 
 .clearing {
 	clear: both;
+}
+
+.info-link, .nav-link {
+	color: #2c3e50 !important;
+}
+
+.info-link:hover, .nav-link:hover {
+	color: #2980b9 !important;
 }
 
 
@@ -93,8 +101,8 @@ img {
 
 .project {
 	background-color: white;
-	margin-bottom: 50px;
-	padding: 10px;
+	margin-bottom: 25px;
+	padding: 13px 10px 10px 13px;
 	height: 160px;
 }
 
